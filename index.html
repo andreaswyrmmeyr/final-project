@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Final Project</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- bootstrap CSS link -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+            
+        <!-- bootstrap JavaScript link -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #e3f2fd;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="https://uilogos.co/img/logomark/cod-lab.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                    Andreas Dreckmeyr
+                  </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled">Resume</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled">Gallery</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+          <div class="container-fluid px-5 text-bg-secondary">
+            <div class="row gx-5">
+
+              <div class="col">
+                     <div class="p-4">
+
+                        <div id="textSize" onmouseover="bigText()" onmouseout="normText()">
+                            <p class="text-dark fw-bold">Andreas Dreckmeyr</p>
+                            <p>Full Stack Web Developer</p>
+                        </div>
+
+                        <br>
+                        <p>Hello I am Andreas and I am a web Developer that has a focus on C#. </p>
+                        <p>I am currently learning to make webapage using bootstrap and AJAX!</p>
+                    </div> 
+              </div>
+
+                <div class="col">
+                    <div class="p-3"> <a href="https://placeholder.com"><img src="https://via.placeholder.com/400" class="img-thumbnail" alt=""></a> </div>    
+                </div> 
+
+            </div>
+          </div>
+
+          <div class="container-fluid text-center">
+            <div class="row">
+              <div class="col" id="list1" onmouseover="changeColor1()" onmouseout="colorNorm()">
+                    <h3>Technical Skills</h3>
+                    <ul class="list-group" id="border1">
+                        <li class="list-group-item">HTML, CSS, JS</li>
+                        <li class="list-group-item">bootstrap and Flexbox</li>
+                        <li class="list-group-item">AJAX</li>
+                    </ul>
+              </div>
+              <div class="col" id="list2" onmouseover="changeColor2()" onmouseout="colorNorm()">
+                    <h3>Soft skills</h3>
+                    <ul class="list-group" id="border2">
+                        <li class="list-group-item">honest</li>
+                        <li class="list-group-item">work ethic?</li>
+                        <li class="list-group-item">Emotionally stable (mostly)</li>
+                        <li class="list-group-item">will make you a latte if proper equipment is present</li>
+                    </ul>
+              </div>
+              <div class="col" id="list3" onmouseover="changeColor3()" onmouseout="colorNorm()">
+                    <h3>Hobbies?</h3>
+                    <ul class="list-group" id="border3"> 
+                        <li class="list-group-item">gaming</li>
+                        <li class="list-group-item">socialzing with the syntax errors</li>
+                        <li class="list-group-item">Dungeons and Dragons</li>
+                    </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="container-fluid text-center">
+            <div class="row">
+                <div class="col">
+                    <h3>Advice for the day</h3>
+                    <p id="advice"></p>
+                </div>
+            </div>
+          </div>
+
+          <footer>test</footer>
+
+        <script src="script.js"></script> 
+    </body>
+</html>
